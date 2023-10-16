@@ -21,6 +21,7 @@ h2 {
 
 h3 {
     font-size: medium;
+    margin-left: 24px;
 }
 
 h6 {
@@ -129,6 +130,7 @@ a {
 
 .footer {
     display: flex;
+    text-align: left;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -144,10 +146,7 @@ a {
     padding: 5px;
 }
 
-.footer h3 {
-    margin-left: 16%;
-    margin-top: 50px;
-}
+
 /*     advertision   */
 
 #services {
