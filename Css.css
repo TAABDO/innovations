@@ -22,6 +22,7 @@ h2 {
 h3 {
     font-size: medium;
     margin-left: 24px;
+    padding: 20px;
 }
 
 h6 {
@@ -123,7 +124,7 @@ a {
 .footer-section {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 40px;
     margin-left: 90px;
     font-size: small;
 }
