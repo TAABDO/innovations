@@ -496,10 +496,13 @@ hr {
     justify-content: center;
     gap: 62px;
 }
-
+#input-contcat{
+    margin-top: 3%;
+    margin-left: -32%;
+}
 .contact-body .textarea-contact {
     height: 9em;
-    width: 63em;
+    width: 59%;
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -799,6 +802,10 @@ hr {
     padding: 10px;
     width: 70%;
     margin-top: 18px;
+    }
+    #input-contcat {
+        margin-top: 4%;
+        margin-left: 0%;
     }
 
     .contact-body .textarea-contact {
