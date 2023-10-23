@@ -3,20 +3,19 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+
 }
 
 h1 {
     font-size: xx-large;
     color: #0F2137;
-    position: absolute;
-    top: 105px;
+    top: 4em;
 }
 
 h2 {
     font-size: x-large;
     color: #0F2137;
-    
+
 }
 
 h3 {
@@ -26,13 +25,15 @@ h3 {
 }
 
 h6 {
-    font-size: small;
+    font-size: medium;
     color: #777;
-    padding: 4px;
+    font-size: medium;
+    padding: 2px;
 }
 
 p {
     font-size: 15px;
+    text-wrap: wrap;
 
 }
 
@@ -42,6 +43,15 @@ p {
     padding-left: 5px;
 }
 
+img {
+    transition: 1ms;
+}
+
+img:hover {
+    box-shadow: 15px 15px 30px rgba(232, 4, 4, 0.2);
+    border-radius: 3px;
+}
+
 #navbar {
     display: flex;
     justify-content: space-around;
@@ -49,6 +59,10 @@ p {
     padding: 25px;
     margin-left: 113px;
     font-size: small;
+}
+
+.nav-icon {
+    display: none;
 }
 
 #navbar ul {
@@ -72,10 +86,10 @@ a {
     padding: 15px;
 }
 
- a:hover {
+a:hover {
     box-shadow: 15px 15px 30px rgba(232, 4, 4, 0.2);
     border-radius: 3px;
-} 
+}
 
 
 
@@ -90,8 +104,8 @@ a {
 }
 
 .content-div-all .img-bg-home {
-    width: 500px;
-    height: 350px;
+    height: 100%;
+    width: 80%;
 }
 
 .content-div-all button {
@@ -101,10 +115,11 @@ a {
     border: none;
     border-radius: 4px;
 }
+
 /*services all pages*/
 .home-services-logo {
-    height: 50px;
-    width: 61px;
+    height: 100%;
+    width: 40%;
 }
 
 .home-services {
@@ -117,6 +132,7 @@ a {
     text-align: start;
     align-items: start;
     padding-top: 50px;
+    margin: 50px;
 }
 
 /*footer*/
@@ -125,8 +141,8 @@ a {
     display: flex;
     align-items: center;
     padding: 40px;
-    margin-left: 90px;
-    font-size: small;
+    margin-left: 239px;
+    font-size: medium;
 }
 
 .footer {
@@ -185,6 +201,7 @@ a {
     width: 24px;
 
 }
+
 #service1 {
     display: flex;
     flex-direction: column;
@@ -202,6 +219,7 @@ a {
     padding: 74px 43px 114px 52px;
     margin: 40px;
 }
+
 /*     about      */
 #content2 {
     display: flex;
@@ -220,10 +238,6 @@ a {
     margin-top: 80px;
 }
 
-.midle-content .midel-lef-p {
-    font-size: xx;
-}
-
 .img-hero-about {
     display: flex;
     justify-content: space-evenly;
@@ -231,8 +245,8 @@ a {
 }
 
 .img-hero-about .heros {
-    height: 250px;
-    width: 150px;
+    height: 100%;
+    width: 75%;
 }
 
 .hero-section {
@@ -243,6 +257,58 @@ a {
     text-align: center;
     padding: 30px;
 }
+
+#section-befor-faq {
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.div-section-befor-faq {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-evenly;
+
+}
+
+.div-section-befor-faq-img {
+    width: 30%;
+}
+
+/*faq setion*/
+#faq {
+    margin-top: 10%;
+    padding-left: 10%;
+    background-color: #f3f6f8;
+    padding: 5% 5% 5% 13%;
+    text-align: center;
+}
+
+.faq {
+    margin-top: 10%;
+}
+
+details>summary {
+    text-align: center;
+    padding: 30px;
+    width: 90%;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+
+}
+
+details>p {
+    background-color: #eeeeee;
+    padding: 50px;
+    margin: 0;
+    font-size: large;
+    box-shadow: 1px 1px 2px #c4e6f7;
+}
+
+
+
 /*    index    */
 
 
@@ -284,6 +350,7 @@ a {
     background-color: #DB4A87;
     border: none;
 }
+
 /*blog- section*/
 .content-blog-home {
     text-align: center;
@@ -294,29 +361,22 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: start;
     margin: 1px;
-    padding: 90px;
+    padding: 60px;
 }
 
 .blog-image {
-    height: 196px;
-    width: 318px;
+    height: 15rem;
+    width: 26rem;
     margin: 24px 41px 33px 0px;
 
 }
-#content2 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px;
 
-}
-.visiter{
+/* .visiter {
     position: absolute;
     top: 0px;
-}
+} */
 
 .midle-content {
     display: flex;
@@ -334,11 +394,6 @@ a {
     display: flex;
     justify-content: space-evenly;
     padding: 77px 149px 26px 200px;
-}
-
-.img-hero-about .heros {
-    height: 250px;
-    width: 150px;
 }
 
 .hero-section {
@@ -395,24 +450,26 @@ hr {
 .cm-logo {
     margin-right: 62px;
 }
-.leftlady-opacity{
+
+.leftlady-opacity {
     opacity: 0.5;
-   }
-   /*  support   */
-   .contact-div {
+}
+
+/*  support   */
+.contact-div {
     display: flex;
     background-color: #edf5fa;
     margin: 13px;
     height: 95px;
     text-align: center;
-  }
-  
-  .contact-div .h1-contact {
-    margin-left: 160px;
-    padding: 31px;
-  }
-  
-  #form-support {
+}
+
+.contact-div .h1-contact {
+    margin-left: 18em;
+    padding: 1em;
+}
+
+#form-support {
     background-color: #fcf5ec;
     border-radius: 6px;
     height: 450px;
@@ -420,64 +477,350 @@ hr {
     margin-left: 40px;
     margin-top: 50px;
     padding: 45px;
-  }
-  
-  .contact-body {
-    padding: 60px;
-  }
-  
-  .contact-body .input-contact {
-  
-    height: 40px;
-    padding: 10px;
-    width: 300px;
-    margin-left: 100px;
+}
+
+.contact-body {
+    padding-left: 9em;
+}
+
+.contact-body .input-contact {
+
+    height: 4em;
+    padding: 1em;
+    width: 28em;
+    border: 1px solid black;
+    border-radius: 0.3em;
+}
+.contact-input-top{
+    display: flex;
+    justify-content: center;
+    gap: 62px;
+}
+
+.contact-body .textarea-contact {
+    height: 9em;
+    width: 63em;
     border: 1px solid black;
     border-radius: 5px;
-    margin-top: 25px;
-  }
-  
-  .contact-body .textarea-contact {
-    height: 100px;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-left: 100px;
-    margin-top: 25px;
     padding: 10px;
-  }
-  
-  .contact-body .contact-buttn {
-    height: 36px;
-    width: 190px;
-    margin-left: 145px;
-    margin-top: 30px;
+}
+
+.contact-body .contact-buttn {
+    height: 4em;
+    width: 16em;
     background: #0A8080;
     border: 1px;
     border-radius: 4px;
     color: white;
-  }
-  
-  /*adresse side */
-  #contact-support {
+}
+.contact-input-bottom{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    
+}
+
+/*adresse side */
+#contact-support {
+    display: flex;
+    flex-direction: column;
     margin-top: 70px;
     text-align: center;
-  }
-  
-  .contact-details {
+}
+
+.contact-details {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     justify-items: center;
-  }
-  
-  .contact-details p {
+    text-align: start;
+}
+
+.contact-details p {
     padding: 20px;
-    margin-top: 30px;
-  }
-  
-  .contact-input-bottom {
+    margin-top: 0px;
+}
+.contact-input-bottom{
     display: flex;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:967px) {
+
+    body {
+        background: #F9EEE4;
+    }
+
+    .nav-icon {
+        display: inline;
+    }
+
+    .visiter {
+        position: none;
+    }
+
+    .nav-middle,
+    .nav-right {
+        display: none;
+    }
+
+    h6 {
+        color: #777;
+        font-size: small;
+        padding: 2px;
+        margin-top: 3%;
+    }
+
+    p {
+        font-size: 12px;
+        padding-top: 20px;
+        font-weight: 800;
+    }
+
+    .content-section-all {
+        background-color: #ffffff;
+    }
+
+    #blog {
+        background: #ffffff;
+        padding: 5%;
+        border-radius: 30px;
+        margin-top: 6%;
+    }
+
+    .home-blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        background: #ffffff;
+        border: 1 solid black;
+        border-radius: 110px;
+    }
+
+    .blog-image {
+        height: 10%;
+        width: 100%;
+        margin: 24px 41px 33px 0px;
+    }
+
+    #home-paragraph {
+        display: none
+    }
+
+    #home-form {
+        display: none
+    }
+
+    #main-supp {
+
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    .content-div-all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 41px;
+        background: #ffffff;
+        margin-bottom: 25px;
+    }
+
+    .services {
+        text-align: start;
+        align-items: center;
+        padding-top: 29px;
+        margin: 0px;
+    }
+
+    .home-services {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 30px 10px 10px;
+    }
+
+    .home-services-logo {
+        height: 90%;
+        width: 90%;
+    }
+
+    #content2 {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+        padding: 21px;
+        border-radius: 30px;
+    }
+
+    .midle-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        margin-top: 59px;
+    }
+
+    #hero-section {
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .img-hero-about {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px 0px 149px 70px;
+    }
+
+    #section-befor-faq {
+        display: block;
+        text-align: center;
+        margin-top: 10%;
+        background: #ffffff;
+        padding: 10% 10%;
+        border-radius: 30px;
+    }
+
+    .div-section-befor-faq {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .div-section-befor-faq-img {
+        width: 70%;
+        margin-top: 10%;
+    }
+
+    #faq {
+        margin-top: 10%;
+        padding: 15% 0% 17% 0%;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+
+    .faq {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding-left: 6%;
+    }
+
+    .content-div-all .img-bg-home {
+        height: 20em;
+        width: 23em;
+    }
+
+    #footer {
+        background-color: #ffffff;
+        margin-top: 5%;
+    }
+
+    .footer-section {
+        width: 30%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 41%;
+    }
+
+    .footerul {
+        display: none;
+    }
+
+    #form-support {
+        margin: 0%;
+        background-color: #ffffff;
+        border-radius: 6px;
+        height: 559px;
+        width: 100%;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    #contact-support {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        padding: 11%;
+        margin-top: 30px;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 108px;
+    }
+
+    .contact-body {
+        padding-left: 0em;
+    }
+
+    .contact-div {
+        display: flex;
+        background-color: #ffffff;
+        height: 95px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+
+    }
+
+    .contact-div .h1-contact {
+        margin-left: 3em;
+        padding: 16px;
+        margin-top: 2%;
+    }
+
+    .contact-body .input-contact {
+        height: 55px;
+    padding: 10px;
+    width: 70%;
+    margin-top: 18px;
+    }
+
+    .contact-body .textarea-contact {
+        height: 100px;
+        width: 70%;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .contact-body .contact-buttn {
+        height: 4em;
+        width: 45%;
+        background: #0A8080;
+        border: 1px;
+        border-radius: 4px;
+        color: white;
+    }
+    .contact-input-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}

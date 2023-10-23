@@ -153,3 +153,13 @@ hr {
 .leftlady-opacity{
     opacity: 0.5;
    }
+
+   @media (max-width=720px){
+
+
+    body {
+        background:#936c4b;
+    }
+
+    
+   }
