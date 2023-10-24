@@ -241,7 +241,7 @@ a:hover {
 .img-hero-about {
     display: flex;
     justify-content: space-evenly;
-    padding: 77px 149px 26px 200px;
+    padding: 0px 149px 26px 200px;
 }
 
 .img-hero-about .heros {
@@ -249,13 +249,27 @@ a:hover {
     width: 75%;
 }
 
-.hero-section {
+#hero-section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
 }
 
 .title-hero-about {
     text-align: center;
     padding: 30px;
+}
+.hero-button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #0A8080;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.fa-sharp .fa-regular {
+    font-weight: 900;
 }
 
 #section-befor-faq {
@@ -472,8 +486,8 @@ hr {
 #form-support {
     background-color: #fcf5ec;
     border-radius: 6px;
-    height: 450px;
-    width: 93%;
+    height: 50%;
+    width: 94%;
     margin-left: 40px;
     margin-top: 50px;
     padding: 45px;
@@ -492,20 +506,14 @@ hr {
     border-radius: 0.3em;
 }
 .contact-input-top{
-    display: flex;
-    justify-content: center;
-    gap: 62px;
-}
-#input-contcat{
-    margin-top: 3%;
-    margin-left: -32%;
-}
-.contact-body .textarea-contact {
-    height: 9em;
-    width: 59%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+     
+    
 }
 
 .contact-body .contact-buttn {
@@ -516,14 +524,7 @@ hr {
     border-radius: 4px;
     color: white;
 }
-.contact-input-bottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
-    
-}
+
 
 /*adresse side */
 #contact-support {
@@ -545,12 +546,7 @@ hr {
     padding: 20px;
     margin-top: 0px;
 }
-.contact-input-bottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 @media (max-width:967px) {
 
@@ -684,8 +680,7 @@ hr {
     .img-hero-about {
         display: flex;
         justify-content: space-evenly;
-        padding: 0px 0px 149px 70px;
-    }
+        padding: 0px 0px 110px 1px;    }
 
     #section-befor-faq {
         display: block;
@@ -829,5 +824,13 @@ hr {
         justify-content: center;
         align-items: center;
         gap: 10px;
+    }
+    #services {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        height: 100%;
+        width: 100%;
     }
 }
