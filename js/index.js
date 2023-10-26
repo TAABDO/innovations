@@ -1,6 +1,4 @@
-
-
-//berger menu function
+/berger menu function
 
 function opennav() {
     var navbar = document.getElementById("navbar");
