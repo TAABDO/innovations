@@ -7,39 +7,47 @@
     <link rel="stylesheet" type="text/css" href="Css.css">
     <link rel="stylesheet" type="text/css" href="advirtison/.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Advertison</title>
 </head>
 
 <body>
     <!--header-->
     <header id="header">
+        <div class="logo-nav-laptop">
+            <span><img src="img/logo-Inov.png" alt="this is all"></span>
+            <span>Innovations</span>
+        </div>
+
         <nav id="navbar">
             <!-- left nav -->
             <div class="logo-nav">
-                <ul>
-                    <li><img src="img/logo-Inov.png" alt="this is all"></li>
-                    <li><span>Innovations</span></li>
-                </ul>
+                <span><img src="img/logo-Inov.png" alt="this is all"></span>
+                <span>Innovations</span>
             </div>
+
+            <button id="close">X</button>
             <!-- middle nav -->
             <div class="nav-middle">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="advertison.html">Advertison</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="advertison.html">Advertison</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
             </div>
             <!-- right nav -->
             <div class="nav-right">
                 <a href="#">login</a>
                 <a style="color: #0A8080 " href="#">get_started</a>
             </div>
-            <div class="nav-icon"><i class="fa-solid fa-bars"></i></div>
+
         </nav>
+        <div class="icon-open" onclick="opennav()"><i class="fa-solid fa-bars"></i></div>
     </header>
+
+
     <section class="content-section-all"><!-- id="content1" -->
         <div class="content-div-all"><!-- class="content1-title-index" -->
             <h1 class="content-head">The Path To Success Awaits You <br> With Us</h1>
@@ -47,15 +55,18 @@
         </div>
     </section>
     <!--services Advertison-->
-    <section id="services">
-        <h2>Services</h2>
-        <h6>we provide you speed ,trust ,satisfaction</h6>
-        <div class="services-advtion">
-            <div class="services-left">
+
+
+    <section id="services1" class="reviews">
+        <h2>Clients Opinion</h2>
+        <div class="services-advtion" id="reviews-advtion">
+
+            <div class="cart-review" id="left-review">
                 <h3 class="services-h3">Marketing & advertising</h3>
+                <img class="tiwtiwa" src="img/picture2.png" alt="tiwtiwa">
                 <p class="services-p">
-                    in simple terms,marketing <br>
-                    is the big picture plan, and <br>
+                    in simple terms,marketing
+                    is the big picture<br> plan, and <br>
                     advertising is one of the <br>
                     ways a business puts that <br>
                     plan into action. They both <br>
@@ -63,9 +74,10 @@
                     business succeed so <br>
                     with us Innovations we <br>can provide
                     you all help that you need.</p>
-
             </div>
-            <div class="midle-service">
+
+            <div class="cart-review" id="meddle-review">
+                <img class="tiwtiwa" src="img/picture4.png" alt="tiwtiwa">
                 <p class="services-p">
                     services a business may <br>
                     require depend on its <br>
@@ -76,22 +88,24 @@
                     providers to benefit from <br>
                     expertise and cost-effectiveness.</p>
                 <h3 class="services-h3">business interprise</h3>
-
             </div>
-            <div class="right-service">
+
+            <div class="cart-review" id="meddle-review">
                 <h3 class="services-h3">Online support</h3>
+                <img class="tiwtiwa" src="img/picture3.png" alt="tiwtiwa">
                 <p class="services-p">
                     Online support services are<br>
                     vital for businesses, aiming <br> to
                     satisfy customers, resolve <br>issues ,
                     and build trust. Successful support<br>
-                    enhances loyalty,garners <br>positive
-                    reviews, and fortifies <br>brand reputation,
+                    enhances loyalty, <br>positive
+                    reviews<br>brand reputation,
                     making it an <br>essential
                     component of <br>business strategy.</p>
             </div>
         </div>
     </section>
+
     <section id="main-supp" style="background-color: #F9FAFC;">
         <div class="content-div-all">
             <h2>Other sevices you must appreciate</h2>
@@ -105,25 +119,57 @@
                         <h5>3D modeling & art</h5>
                         <h6><br>Get your info tests delivered <br>at home collect
                             a sample from <br>the your pogress tests.</h6><br>
-                        <h6 style="color: rgb(129, 231, 249);">learn more ></h6>
+                        <button id="openmodal" class="openmodal">En savoir plus</button>
+                        <div id="modal" class="modal">
+                            <div class="modal-sider">
+                                <h1>3D modeling & art</h1>
+                                <p><br>Get your info tests delivered <br>at home collect
+                                    a sample from <br>the your pogress tests.</h6>
+                                    <br>
+                                </p>
+                                <button id="closemodal" class="closemodal">X</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--home-services1-midle-->
                 <div class="services" id="home-services2-medl">
                     <img class="home-services-logo" src="img/digital.png" alt="ultimate">
-                    <div class="service1"><h5>Digital promotion</h5>
-                    <h6><br>Get your info tests delivered <br>at home collect
-                        a sample from <br>the your pogress tests.</h6><br>
-                    <p style="color: rgb(129, 231, 249);">learn more ></p>
-                </div>
+                    <div class="service1">
+                        <h5>Digital promotion</h5>
+                        <h6><br>Get your info tests delivered <br>at home collect
+                            a sample from <br>the your pogress tests.</h6><br>
+                        <button id="openmodal">En savoir plus</button>
+                        <div id="modal" class="modal">
+                            <div class="modal-sider">
+                                <h1>3D modeling & art</h1>
+                                <p><br>Get your info tests delivered <br>at home collect
+                                    a sample from <br>the your pogress tests.</h6>
+                                    <br>
+                                </p>
+                                <button id="closemodal">X</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--home-services1-left-->
                 <div class="services" id="home-services3-left">
                     <img class="home-services-logo" src="img/Entreprise2.png" alt="Entreprise2">
-                    <div class="service1"><h5>Business Enterprise</h5>
+                    <div class="service1">
+                        <h5>Business Enterprise</h5>
                         <h6><br>Get your info tests delivered <br>at home collect
                             a sample from <br>the your pogress tests.<br></h6><br>
-                        <h6 style="color: rgb(129, 231, 249);">learn more ></h6>
+                        <button id="openmodal">En savoir plus</button>
+                        <div id="modal" class="modal">
+                            <div class="modal-sider">
+                                <h1>3D modeling & art</h1>
+                                <p><br>Get your info tests delivered <br>at home collect
+                                    a sample from <br>the your pogress tests.</h6>
+                                    <br>
+                                </p>
+                                <button id="closemodal">X</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,7 +182,17 @@
                             Get your info tests delivered <br>at home collect
                             a sample from <br>the your pogress tests.
                         </h6><br>
-                        <h6 style="color: rgb(129, 231, 249);">learn more ></h6>
+                        <button id="openmodal">En savoir plus</button>
+                        <div id="modal" class="modal">
+                            <div class="modal-sider">
+                                <h1>3D modeling & art</h1>
+                                <p><br>Get your info tests delivered <br>at home collect
+                                    a sample from <br>the your pogress tests.</h6>
+                                    <br>
+                                </p>
+                                <button id="closemodal">X</button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -147,7 +203,17 @@
                         <h5>Ultimate development</h5>
                         <h6><br>Get your info tests delivered <br>at home collect
                             a sample from <br>the your pogress tests.<br></h6><br>
-                        <h6 style="color: rgb(129, 231, 249);">learn more ></h6>
+                        <button id="openmodal">En savoir plus</button>
+                        <div id="modal" class="modal">
+                            <div class="modal-sider">
+                                <h1>3D modeling & art</h1>
+                                <p><br>Get your info tests delivered <br>at home collect
+                                    a sample from <br>the your pogress tests.</h6>
+                                    <br>
+                                </p>
+                                <button id="closemodal">X</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--home-services1-left-->
@@ -159,7 +225,17 @@
                                 Get your info tests delivered <br>at home collect
                                 a sample from <br>the your pogress tests.<br>
                             </h6><br>
-                            <h6 style="color: rgb(129, 231, 249);">learn more ></h6>
+                            <button id="openmodal">En savoir plus</button>
+                            <div id="modal" class="modal">
+                                <div class="modal-sider">
+                                    <h1>3D modeling & art</h1>
+                                    <p><br>Get your info tests delivered <br>at home collect
+                                        a sample from <br>the your pogress tests.</h6>
+                                        <br>
+                                    </p>
+                                    <button id="closemodal">X</button>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -167,26 +243,27 @@
     </section>
 
 
-    <section id="services" class="reviews">
+    <section id="services1" class="reviews">
         <h2>Clients Opinion</h2>
         <div class="services-advtion" id="reviews-advtion">
 
-            <div class="services-left" id="right-review">
-                <img class="tiwtiwa" src="img/tiwtiwa.png" alt="tiwtiwa"><br>
-                <b> <br>Great job you are <br>very flexible .<br><br></b>
+            <div class="cart-review" id="left-review">
+                <img class="tiwtiwa" src="img/picture2.png" alt="tiwtiwa">
+                <b> Great job you are very flexible .</b>
+                <h6>“ Nora samih “ </h6>
+
+            </div>
+
+            <div class="cart-review" id="meddle-review">
+                <img class="tiwtiwa" src="img/picture4.png" alt="tiwtiwa">
+                <b>Nice Job happy with your service.</b>
                 <h6>“johane north “</h6>
             </div>
 
-            <div class="midle-service" id="right-review">
-                <img class="tiwtiwa" src="img/tiwtiwa.png" alt="tiwtiwa"><br>
-                    <b><br>Nice Job<br> happy with <br>your service.<br><br></b>
-                <h6>“ Nora samih “ </h6>
-            </div>
-
-            <div class="right-service" id="right-review">
-                <img class="tiwtiwa"  src="img/tiwtiwa.png" alt="tiwtiwa"><br>
-                    <b><br> Amazing Service thank <br> you .<br><br></b>
-                <h6>“Said Aabilla “</h6>
+            <div class="cart-review" id="right-review">
+                <img class="tiwtiwa" src="img/picture3.png" alt="tiwtiwa">
+                <b> Amazing Service thank you .</b>
+                <h6>“alliba conan“</h6>
             </div>
         </div>
     </section>
@@ -196,9 +273,9 @@
         <div class="footer-section">
             <div class="footer" id="footer-logo">
                 <ul class="footerul">
-                <li>
-                    <img height="90px" width="100px" src="img/logo.png" alt="wait a min please">
-                 </li>
+                    <li>
+                        <img height="90px" width="100px" src="img/logo.png" alt="wait a min please">
+                    </li>
                     <li> <a>Terms of use | Privacy</a></li>
                     <li>
                         <h6 style="font-size: 10px;">Copyright by 2019 INNOVATIONS , Inc</h6>
@@ -208,7 +285,7 @@
             <div class="footer">
                 <h3 style="margin-left: -5px;">About US</h3>
                 <ul class="footerul">
-                    
+
                     <li><a href="#">Support Center</a></li>
                     <li><a href="#">Customer Support</a></li>
                     <li><a href="#">About Us</a></li>
@@ -218,7 +295,7 @@
             <div class="footer">
                 <h3>information</h3>
                 <ul class="footerul">
-                    
+
                     <li><a href="#">Return Policy</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
@@ -237,7 +314,7 @@
             <div class="footer">
                 <h3>connect</h3>
                 <ul class="footerul">
-                    
+
                     <li><a href="#"><i class="fa-brands fa-facebook" style="color: #1f3356;"></i>facebook</a></li>
                     <li><a href="#"><i class="fa-brands fa-twitter" style="color: #7edaf1;"></i>Twitter</a></li>
                     <li><a href="#"><i class="fa-brands fa-github" style="color: #0a0a0a;"></i>Github</a></li>
@@ -246,6 +323,9 @@
             </div>
         </div>
     </section>
+    <script src="js/advertison.js"></script>
+    <script src="js.js"></script>
+
 </body>
 
 </html>
