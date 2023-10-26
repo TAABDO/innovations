@@ -5,39 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Css.css">
-    <link rel="stylesheet" href="support/.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
 <body>
     <!--header-->
     <header id="header">
+        <div class="logo-nav-laptop">
+            <span><img src="img/logo-Inov.png" alt="this is all"></span>
+            <span>Innovations</span>
+        </div>
+
         <nav id="navbar">
             <!-- left nav -->
             <div class="logo-nav">
-                <ul>
-                    <li><img src="img/logo-Inov.png" alt="this is all"></li>
-                    <li><span>Innovations</span></li>
-                </ul>
+                <span><img src="img/logo-Inov.png" alt="this is all"></span>
+                <span>Innovations</span>
             </div>
+
+            <button id="close">X</button>
             <!-- middle nav -->
             <div class="nav-middle">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="advertison.html">Advertison</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="advertison.html">Advertison</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
             <!-- right nav -->
             <div class="nav-right">
                 <a href="#">login</a>
                 <a style="color: #0A8080 " href="#">get_started</a>
             </div>
-            <div class="nav-icon"><i class="fa-solid fa-bars"></i></div>
+
         </nav>
+        <div class="icon-open" onclick="opennav()"><i class="fa-solid fa-bars"></i></div>
     </header>
 
     <section id="contact">
@@ -48,17 +54,25 @@
     <!-- section Form -->
     <section id="form-support">
         <h3>Send Us a Message :</h3>
-        <form class="contact-body">
-            <div class="contact-input-top">
+        <form class="contact-body" id="form">
+            <div class="contact-input-top" id="contact input top">
                 <label for="input-contact">First Name</label>
-                <input class="input-contact" placeholder="First Name" type="text" required>
+                <input class="input-contact" id="firstname" placeholder="First Name" type="text" >
+                <span class="form-span" id="form-span-first">please enter a valid firstname</span>
+               
                 <label for="input-contact">Last Name</label>
-                <input class="input-contact" placeholder="Last Name" type="text" required>
+                <input class="input-contact" id="lastname" placeholder="Last Name" type="text" >
+                <span class="form-span" id="form-span-last">please enter a valid lastname</span>
+                
                 <label for="input-contact" class="label-email">Email</label>
-                <input class="input-contact" placeholder="Email" type="email" required>
+                <input class="input-contact" id="email" placeholder="Email" type="text" >
+                <span class="form-span" id="form-span-email">please enter a valid email</span>
+                
                 <label for="textarea-contact">Message</label>
-                <textarea class="input-contact" placeholder="Message" required></textarea>
-                <button class="contact-buttn">Submit</button>
+                <textarea class="input-contact" id="textarea-contcat" placeholder="Message" ></textarea>
+                <span class="form-span" id="form-span-textera" >please enter a valid Message</span>
+               
+                <button type="submit" id="contact-buttn" style="background-color: #0A8080; height: 30%;width: 10%;" >Submit</button>
             </div>
         </form>
     </section>
@@ -66,10 +80,16 @@
     <section id="contact-support">
         <h3>Contact Details :</h3>
         <div class="contact-details">
-                <span><i class="fa-solid fa-phone fa-2x" style="color: #0a8080;"></i><p>(+212)5658970</p></span>
-            <span><i class="fa-solid fa-envelope fa-2x" style="color: #0a8080;"></i> <p> Innvantions@gmail.com</p></span>
-            <span><i class="fa-solid fa-location-dot fa-2x" style="color: #0a8080;"></i> <p> Qu El Nassr Rue <br>Elouiam
-                N10 Youssoufia,Maroc</p></span>
+            <span><i class="fa-solid fa-phone fa-2x" style="color: #0a8080;"></i>
+                <p>(+212)5658970</p>
+            </span>
+            <span><i class="fa-solid fa-envelope fa-2x" style="color: #0a8080;"></i>
+                <p> Innvantions@gmail.com</p>
+            </span>
+            <span><i class="fa-solid fa-location-dot fa-2x" style="color: #0a8080;"></i>
+                <p> Qu El Nassr Rue <br>Elouiam
+                    N10 Youssoufia,Maroc</p>
+            </span>
         </div>
     </section>
     <!--footer-->
@@ -77,9 +97,9 @@
         <div class="footer-section">
             <div class="footer" id="footer-logo">
                 <ul class="footerul">
-                <li>
-                    <img height="90px" width="100px" src="img/logo.png" alt="wait a min please">
-                 </li>
+                    <li>
+                        <img height="90px" width="100px" src="img/logo.png" alt="wait a min please">
+                    </li>
                     <li> <a>Terms of use | Privacy</a></li>
                     <li>
                         <h6 style="font-size: 10px;">Copyright by 2019 INNOVATIONS , Inc</h6>
@@ -89,7 +109,7 @@
             <div class="footer">
                 <h3 style="margin-left: -5px;">About US</h3>
                 <ul class="footerul">
-                    
+
                     <li><a href="#">Support Center</a></li>
                     <li><a href="#">Customer Support</a></li>
                     <li><a href="#">About Us</a></li>
@@ -99,7 +119,7 @@
             <div class="footer">
                 <h3>information</h3>
                 <ul class="footerul">
-                    
+
                     <li><a href="#">Return Policy</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
@@ -118,7 +138,7 @@
             <div class="footer">
                 <h3>connect</h3>
                 <ul class="footerul">
-                    
+
                     <li><a href="#"><i class="fa-brands fa-facebook" style="color: #1f3356;"></i>facebook</a></li>
                     <li><a href="#"><i class="fa-brands fa-twitter" style="color: #7edaf1;"></i>Twitter</a></li>
                     <li><a href="#"><i class="fa-brands fa-github" style="color: #0a0a0a;"></i>Github</a></li>
@@ -127,6 +147,10 @@
             </div>
         </div>
     </section>
+
+    <script src="js/support.js"></script>
+    <script src="js.js"></script>
+
 
 </body>
 
