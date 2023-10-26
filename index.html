@@ -15,33 +15,37 @@
 <body>
     <!--header-->
     <header id="header">
+        <div class="logo-nav-laptop">
+            <span><img src="img/logo-Inov.png" alt="this is all"></span>
+            <span>Innovations</span>
+        </div>
+        
         <nav id="navbar">
-            <!-- left nav -->
-            <div class="logo-nav">
-                <ul>
-                    <li><img src="img/logo-Inov.png" alt="this is all"></li>
-                    <li><span>Innovations</span></li>
-                </ul>
-            </div>
-            <!-- middle nav -->
-            <div class="nav-middle">
-                <ul >
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="advertison.html">Advertison</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
+             <!-- left nav -->
+             <div class="logo-nav">
+                <span><img src="img/logo-Inov.png" alt="this is all"></span>
+                <span>Innovations</span>
             </div>
            
+                <button id="close">X</button>
+            <!-- middle nav -->
+          <div class="nav-middle">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="advertison.html">Advertison</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
             <!-- right nav -->
-            <div class="nav-right">
+          <div class="nav-right">
                 <a href="#">login</a>
                 <a style="color: #0A8080 " href="#">get_started</a>
-            </div>
-            <div class="nav-icon"><i class="fa-solid fa-bars"></i></div>
-        </nav>
-    </header>
+          </div>
 
+        </nav>
+        <div class="icon-open" onclick="opennav()"><i class="fa-solid fa-bars"></i></div>
+    </header>
     <section class="content-section-all"><!-- id="content1" -->
         <div class="content-div-all"><!-- class="content1-title-index" -->
             <h1 class="visiter">Creativity starts with viewing the whole <br> world differently</h1>
@@ -261,6 +265,9 @@
             </div>
         </div>
     </section>
+    <script src="js/index.js"></script>
+    <script src="js.js"></script>
+
 </body>
 
 </html>
